@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+}
+
+html {
+   font-size: 15px;
+}
+
+
+.author{
+   font-size: 20px;
+   font-weight: bold;
+   width: fit-content;
+}
+
+.card {
+   background-color: rgb(235, 199, 199);
+   width: 40%;
+   display: flex;
+   transform: translateX(800px);
+   margin-top: 80px;
+   border-radius: 5px;
+   box-shadow: 3px 3px 3px 3px;
+   height: 30vh;
+   margin-bottom: 20px;
+}
+
+.info {
+   transform: translateX(150px);
+   margin-top: -65px;
+}
+
+.content {
+   max-width: 70%;
+   overflow: hidden;
+   margin-top: 20px;
+}
+
+.info a {
+   display: block;
+   margin-top: 20px;
+   font-size: 25px;
+   text-decoration: none;
+}
+.date {
+   margin-top: 20px;
+}

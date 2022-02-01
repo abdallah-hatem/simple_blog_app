@@ -1,0 +1,22 @@
+{% extends "./base.html" %}
+{% load static %}
+
+{% block content %}
+
+
+
+<div class="card">
+    <div class="img">
+        <img src="" alt="profile">
+    </div>
+    <div class="author">{{post.author}}</div>
+    <div class="info">
+        <div class="date">{{post.publish_date}}</div>
+        <a href="#">{{post.title}}</a>
+        <p class="content">{{post.content}}</p>
+    </div>
+</div>
+
+
+
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends "./base.html" %}
+{% load static %}
+
+{% block content %}
+
+{% for post in posts %}
+
+<div class="card">
+    <div class="img">
+        <img src="../media/download.jpg" alt="profile">
+    </div>
+    <div class="author">{{post.author}}</div>
+    <div class="info">
+        <div class="date">{{post.publish_date}}</div>
+        <a href="{{post.get_absolute_url}}">{{post.title}}</a>
+        <p class="content">{{post.excerpt}}</p>
+    </div>
+</div>
+
+
+
+
+{% endfor %}
+
+{% endblock %}
